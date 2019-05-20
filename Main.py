@@ -10,7 +10,7 @@ from datetime import date
 
 def __main__():
 
-    emails = ['johnD@ugollc.com','JohhnyBoy@gmail.com']
+    emails = ['''johnD@ugollc.com''','''JohhnyBoy@gmail.com''']
     emailList = CustomerEmails(1116969,emails)
     address1 = Address('1431 Hackberry Ln','Tuscaloosa','AL',35401)
     address2 = Address('1613 11th st','Tuscaloosa','AL',35401)

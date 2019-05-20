@@ -44,7 +44,7 @@ def AddToCustomerListID(johnDoe):
     DB.WriteData(query)
 
 def AddToEmail(johnDoe):
-    default = 'INSERT INTO Customer_Emails(Email, CustID) VALUES'
+    default = 'INSERT INTO Customer_Email(Email, CustID) VALUES'
     for email in johnDoe.emails.emails:
         unique = '('+email+ ',' +str(johnDoe.custID)+')'
         query = default + unique
