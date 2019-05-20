@@ -9,6 +9,7 @@ from CustomerFile import Customer, Address, CustomerEmails, CustomerAddresses, C
 from datetime import date
 
 def __main__():
+
     emails = ['johnD@ugollc.com','JohhnyBoy@gmail.com']
     emailList = CustomerEmails(1116969,emails)
     address1 = Address('1431 Hackberry Ln','Tuscaloosa','AL',35401)
@@ -20,7 +21,9 @@ def __main__():
     phones = [phoNo,phoNo2]
     phoneList = CustomerPhoneNumbers(1116969, phones)
     johnDoe = Customer(1116969,date(2018,5,5),date(2019,4,8),25,100,4,600,24,'Active','John Doe',emailList,addressList,phoneList)
+    Create.AddCustomer(johnDoe)
     try:
+        #Create.WriteToCustomerList()
         Create.AddCustomer(johnDoe)
         print ('no way')
     except:

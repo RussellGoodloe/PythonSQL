@@ -28,4 +28,14 @@ def WriteData(query):
     writer = conn.cursor()
     writer.execute(query)
     writer.close()
+    conn.commit()
     conn.close()
+def SelectData(query):
+    conn = Connect()
+    cursor = conn.cursor()
+    cursor.execute(query)
+    cursor.close()
+    conn.commit()
+    conn.close()
+
+
